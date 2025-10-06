@@ -5,6 +5,7 @@ set(LIBS
         ${conversion_libs}
         MLIRRegisterAllDialects
         MLIRRegisterAllPasses
+        MLIRRegisterAllExtensions
         MLIRArsenal
         MLIRAnalysis
         MLIRCallInterfaces
