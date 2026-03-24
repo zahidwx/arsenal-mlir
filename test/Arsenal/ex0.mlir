@@ -1,10 +1,10 @@
-func.func private @orig()
+func.func private @original()
 func.func private @updated()
 
 // CHECK-LABEL: func @test
 func.func @test() {
   // CHECK: call @updated
-  call @orig() : () -> ()
+  call @original() : () -> ()
   return
 }
 
