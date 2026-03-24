@@ -18,6 +18,7 @@ int main(int argc, char **argv) {
   mlir::registerAllExtensions(registry);
   mlir::registerAllPasses();
 
+  // Build on top of mlir-opt
   return mlir::asMainReturnCode(
       mlir::MlirOptMain(argc, argv, "Arsenal Pass Driver", registry));
 }
