@@ -14,7 +14,7 @@ module attributes {transform.with_named_sequence} {
     func.func @fc_relu(%lhs: tensor<512x512xf32>, %rhs: tensor<512x512xf32>,
                     %bias: tensor<512x512xf32>, %output: tensor<512x512xf32>)
                     -> tensor<512x512xf32> {
-    // Matmul op.
+    // Matmul operation.
     %matmul = linalg.matmul ins(%lhs, %rhs: tensor<512x512xf32>, tensor<512x512xf32>)
                             outs(%output: tensor<512x512xf32>) -> tensor<512x512xf32>
 
